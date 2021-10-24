@@ -146,23 +146,25 @@ body {
     rgba(0, 0, 0, 0) 100%
   );
 }
-.promo,
-.random {
+.promo {
+  display: flex;
+  justify-content: space-between;
+  margin: -20px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 .card {
+  margin: 20px;
   border-radius: 20px;
   overflow: hidden;
   position: relative;
   padding: 32px;
   max-width: 570px;
-  width: 570px;
-  min-height: 380px;
-  height: 380px;
+  max-height: 380px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex: 50%;
 }
 .card:before {
   z-index: -1;
@@ -216,7 +218,219 @@ body {
   z-index: -2;
   object-fit: cover;
 }
-.cards {
+.section-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 23px;
+  margin-top: 0;
+  margin-bottom: 47px;
+}
+.delivery-card {
+  width: 275px;
+  height: 182px;
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  margin: 15px;
+}
+.deilvery-week {
+  padding: 100px 0px;
+}
+.delivery-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.delivery-tag {
+  position: absolute;
+  left: 10px;
+  top: 16px;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #49494f;
+  padding: 5px 10px;
+}
+.tag-health {
+  background: #d0fd89;
+}
+.tag-vegan {
+  background: #aebc41;
+  color: white;
+}
+.tag-meet {
+  background: #b86b78;
+  color: #ffffff;
+}
+.tag-bird {
+  background: #d68334;
+  color: #ffffff;
+}
+.tag-fish {
+  background: #cd6255;
+  color: #ffffff;
+}
+.tag-child {
+  background: #fffdbf;
+  color: #49494f;
+}
+.tag-parents {
+  background: #f6fdc8;
+  color: #49494f;
+}
+.tag-holyday {
+  background: #fef7fe;
+  color: #49494f;
+}
+.delivery-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+.section-grey {
+  background: #f6f6f6;
+}
+.category {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+.tabs {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  margin-bottom: 62px;
+}
+.tabs-link {
+  font-size: 20px;
+  line-height: 23px;
+  color: #49494f;
+  text-decoration: none;
+  margin-right: 58px;
+}
+.tabs-link.active {
+  color: #f37321;
+}
+.tabs-card {
+  max-width: 270px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 11px;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+.tabs-image {
+  max-width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.tabs-card-content {
+  padding: 23px;
+}
+.tabs-title {
+  margin-top: 0px;
+  margin-bottom: 13px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+}
+.tabs-description {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  color: #b9b9be;
+}
+.tabs-price {
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 23px;
+  color: #4b4b51;
+  display: block;
+  margin-bottom: 5px;
+}
+.tabs-weit {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #aaaab1;
+}
+.tabs-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.button-outline {
+  background-color: transparent;
+  padding: 15px 25px;
+  border: 2px solid #f37321;
+  box-sizing: border-box;
+  border-radius: 33px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f37321;
+}
+.tabs-content {
   display: flex;
   justify-content: space-between;
+  margin: -11px;
+}
+.button-center {
+  display: block;
+  margin: auto;
+  margin-top: 60px;
+  width: 315px;
+  cursor: pointer;
+}
+.section-white {
+  background-color: #fff;
+}
+.tabs-vector {
+  border-radius: 0px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+}
+.txt {
+  text-align: center;
+}
+.tnt {
+  line-height: 22px;
+  text-align: center;
+  color: #49494f;
+}
+.tht {
+  background-color: white;
+  max-height: 296px;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+}
+.footer {
+  padding: 40px 0px;
+  background: #f6f6f6;
+}
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+}
+.footer-logo {
+  margin-right: 50px;
+}
+.footer-link {
+  font-size: 16px;
+  line-height: 23px;
+  text-decoration-line: underline;
+  color: #000000;
+  margin-right: 50px;
+}
+.social-links {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.social-link {
+  margin-left: 20px;
+  text-decoration: none;
 }
